@@ -20,3 +20,5 @@ write.table(data.frame("cell_id"=rownames(exprMat),exprMat),
  file=paste0(output_path,"exprMat.tsv"),
  row.names=FALSE,col.names=TRUE,sep="\t",quote = FALSE)
 ```
+
+Be sure to use the correct branch (master branch = Mus Musculus, human branch = Homo Sapiens)
