@@ -14,16 +14,16 @@ pyscenic grn \
 --num_workers $NR_WORKERS \
 -o /scenicdata/expr_mat.adjacencies.tsv \
 /scenicdata/exprMat.tsv \
-/resources/mm_tfs.txt
+/resources/human_tfs.txt
 
 
 singularity exec -B $DATA_FOLDER:/scenicdata,$SCENIC_RESOURCES:/resources \
 $SCENIC_IMAGE \
 pyscenic ctx \
 /scenicdata/expr_mat.adjacencies.tsv \
-/resources/mm9-500bp-upstream-7species.mc9nr.feather \
-/resources/mm9-tss-centered-10kb-7species.mc9nr.feather \
---annotations_fname /resources/motifs-v9-nr.mgi-m0.001-o0.0.tbl \
+/resources/hg19-500bp-upstream-10species.mc9nr.feather \
+/resources/hg19-tss-centered-10kb-10species.mc9nr.feather \
+--annotations_fname /resources/motifs-v9-nr.hgnc-m0.001-o0.0.tbl \
 --expression_mtx_fname /scenicdata/exprMat.tsv \
 --mode "dask_multiprocessing" \
 --output /scenicdata/regulons.csv \
