@@ -3,8 +3,8 @@
 # This script currently processes mouse data
 # TODO: Make branch for human data
 
-SCENIC_IMAGE=/staging/leuven/stg_00002/voetlab/resources/singularity_images/aertslab-pyscenic-0.9.19.sif
-SCENIC_RESOURCES=/staging/leuven/stg_00002/voetlab/resources/SCENIC
+SCENIC_IMAGE=/staging/leuven/stg_00055/resources/singularity_images/aertslab-pyscenic-0.9.19.sif
+SCENIC_RESOURCES=/staging/leuven/stg_00055/resources/SCENIC
 DATA_FOLDER=$1
 NR_WORKERS=20
 
